@@ -1,0 +1,23 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $main-font-family;
+    color: var(--main-color);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+    body.modal-open {
+            overflow: hidden;
+        }
+    
+        body.mobile-menu-open {
+            @include mq(mobile-only) {
+                overflow: hidden;
+            }
+        }
+
+

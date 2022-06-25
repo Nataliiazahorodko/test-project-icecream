@@ -1,0 +1,72 @@
+// секция наша команда
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  @include social-link;
+
+  background-color: var(--bg-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-accent-color);
+  }
+
+  &:hover .social-icon,
+  &:focus .social-icon {
+    fill: var(--bg-color);
+  }
+}
+
+.social-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-icon {
+  fill: var(--social-icon-border-icon);
+
+  transition: fill var(--transition-timing-function);
+
+  .footer-social-link:hover &,
+  .footer-social-link:focus & {
+    fill: var(--bg-color);
+  }
+}
+
+/* social footer */
+
+
+.social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--second-main-color);
+}
+
+.footer-social-link {
+  @include social-link;
+
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--bg-accent-color);
+  }
+}
+
+.footer-social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-icon {
+  fill: var(--second-main-color);
+}

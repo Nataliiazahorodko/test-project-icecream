@@ -1,0 +1,23 @@
+.logo {
+ 
+  font-family: $logo-font-family;
+  font-style: normal;
+    @include FontStyles(700, 24px, 1.16, null, 0.03em, null, null);
+
+    
+      @include mq(desktop) {
+        @include FontStyles(700, 26px, 1.19, null, 0.03em, null, null);
+
+      }
+  color: var(--accent-color);
+}
+
+.logo__right {
+  &--main {
+    color: var(--main-color);
+  }
+
+  &--footer {
+    color: var(--second-main-color);
+  }
+}

@@ -1,0 +1,66 @@
+/* секция постоянные клиенты */
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+ 
+}
+
+.clients-item {
+  @include mq(mobile-only) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin: 15px;
+    
+    
+  }
+  @include mq(tablet-only) {
+    flex-basis: calc(100% / 3 - 30px);
+    margin: 15px;
+    
+  }
+
+  @include mq(desktop) {
+    flex-basis: calc(100% / 6 - 30px);
+    margin: 15px;
+  }
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 92px;
+  border: 1px solid var(--social-icon-border-icon);
+  border-radius: 4px;
+
+  transition: border-color var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  &:hover .clients-icon,
+  &:focus .clients-icon {
+    fill: var(--accent-color);
+  }
+}
+
+.clients-icon {
+  fill: var(--social-icon-border-icon);
+
+  transition: fill var(--transition-timing-function);
+}

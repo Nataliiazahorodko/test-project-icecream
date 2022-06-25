@@ -1,0 +1,89 @@
+/* подвал сайта */
+.footer {
+  background-color: var(--fotter-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  @include mq(not-desktop) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__group {
+  @include mq(not-desktop) {
+    margin-bottom: 60px;
+  }
+
+  @include mq(tablet-only) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+.contact-footer {
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
+  }
+
+  @include mq(desktop) {
+    margin-right: 70px;
+  }
+}
+
+.link-footer {
+  display: block;
+  margin: 0 0 20px 0;
+}
+
+.footer-item {
+  margin-bottom: 8px;
+  @include mq(desktop) {
+    margin-bottom: 8px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer-address-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-main-color);
+}
+
+.footer-contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contact-color);
+
+  transition: color var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

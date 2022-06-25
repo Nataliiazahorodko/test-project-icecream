@@ -1,0 +1,68 @@
+/******* секция герой ********/
+
+.hero {
+  max-width: 1600px;
+  min-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--hero-bg-color);
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/hero_sm.jpg');
+
+  @include mq(retina) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/hero_sm@2x.jpg');
+  }
+
+  @include mq(tablet) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/hero_md.jpg');
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/hero_md@2x.jpg');
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/hero/hero_lg.jpg');
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero/hero_lg@2x.jpg');
+    }
+  }
+
+  text-align: center;
+  padding: 118px 0;
+
+  @include mq(desktop) {
+    min-height: 600px;
+    padding: 200px 0;
+  }
+}
+
+.hero__title {
+  display: block;
+  max-width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--second-main-color);
+  @include mq(desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}

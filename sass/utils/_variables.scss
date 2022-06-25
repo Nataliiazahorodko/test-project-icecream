@@ -1,0 +1,24 @@
+:root {
+   --accent-color: #2196f3;
+    --main-color: #212121;
+    --second-main-color: #ffffff;
+    --third-main-color: #757575;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+
+    --bg-color: #ffffff;
+    --bg-accent-color: #2196f3;
+    --fotter-bg-color: #2f303a;
+    --third-bg-color: #f5f4fa;
+    --bg-button-hover: #188ce8;
+    --header-border: #ececec;
+    --gallery-border: #eeeeee;
+    --social-icon-border-icon: #afb1b8;
+    --hero-bg-color: #c4c4c4;
+
+    --transition-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// fonts
+
+$main-font-family: 'Roboto', sans-serif;
+$logo-font-family: 'Raleway', sans-serif;
